@@ -492,21 +492,50 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <form class="js-speaker-form">
-          <label for="name">Имя</label>
-          <input type="text" name="name" id="name" /> <br />
-          <label for="tel">Телефон</label>
-          <input type="tel" name="tel" id="tel" /><br />
-          <label for="mail">Почта</label>
-          <input type="email" name="mail" id="mail" />
+        <form class="form js-speaker-form">
+          <b class="form-title">Оставьте свои данные, мы вам перезвоним</b>
+          <div class="form-field">
+            <label for="name" class="form-label">Имя</label>
+            <input type="text" name="name" id="name" class="form-input" />
+          </div>
 
-          <input type="checkbox" name="" value="html" id="html" />
-          <label for="html">HTML</label>
-          <input type="checkbox" name="" value="html" id="css" />
-          <label for="css">CSS</label>
+          <div class="form-field">
+            <label for="tel" class="form-label">Телефон</label>
+            <input type="tel" name="tel" id="tel" class="form-input" />
+          </div>
+
+          <div class="form-field">
+            <label for="mail" class="form-label">Почта</label>
+            <input type="email" name="mail" id="mail" class="form-input" />
+          </div>
+
+          <div class="form-field">
+            <label for="comment" class="form-label">Комментарий </label>
+            <textarea
+              name="comment"
+              id="comment"
+              cols="30"
+              rows="10"
+              placeholder="Введите текст"
+              class="form-textarea"
+            >
+            </textarea>
+          </div>
+
+          <div class="form-field">
+            <input
+              type="checkbox"
+              name="policy"
+              id="policy"
+              autocomplete="off"
+            />
+            <label for="policy"
+              >Соглашаюсь с рассылкой и принимаю Условия договора</label
+            >
+          </div>
 
           <br />
-          <button type="submit">Отправить</button>
+          <button type="submit" class="form-btn">Отправить</button>
         </form>
         <button class="close-btn" data-modal-close>
           <svg class="close-icon" width="18" height="18">

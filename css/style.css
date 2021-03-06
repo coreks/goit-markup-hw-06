@@ -343,10 +343,51 @@ footer {
   align-items: center;
 }
 
+.form {
+  width: 448px;
+  outline: 1px solid tomato;
+  margin-left: auto;
+  margin-right: auto;
+
+  /* padding: 20px; */
+}
+
+.form-title {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.form-field {
+  outline: 1px solid blue;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  margin-bottom: 4px;
+}
+
+.form-input {
+  height: 40px;
+  padding: 12px;
+}
+
+.form-textarea {
+  resize: none;
+  padding: 12px 16px;
+}
+
 .skills {
   padding-top: 94px;
   padding-bottom: 94px;
   background-color: var(--white-first);
+}
+
+.form-textarea::placeholder {
+  color: red;
 }
 
 .skills-list {
