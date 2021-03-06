@@ -487,7 +487,24 @@
             </li>
           </ul>
         </div>
-        <div class="form-container"></div>
+        <div class="form-container">
+          <b class="form-title">Подпишитесь на рассылку</b>
+          <div>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="form-input"
+              placeholder="E-mail"
+            />
+            <button type="submit" class="form-btn">
+              <span class="btn-text">Подписаться</span>
+              <svg width="24" height="24" class="btn-icon">
+                <use href="./images/icons.svg#send"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -514,12 +531,9 @@
             <textarea
               name="comment"
               id="comment"
-              cols="30"
-              rows="10"
-              placeholder="Введите текст"
               class="form-textarea"
-            >
-            </textarea>
+              placeholder="Введите текст"
+            ></textarea>
           </div>
 
           <div class="form-field">
@@ -530,12 +544,14 @@
               autocomplete="off"
             />
             <label for="policy"
-              >Соглашаюсь с рассылкой и принимаю Условия договора</label
+              >Соглашаюсь с рассылкой и принимаю
+              <a href="">Условия договора</a></label
             >
           </div>
 
-          <br />
-          <button type="submit" class="form-btn">Отправить</button>
+          <div class="form-send">
+            <button type="submit" class="form-btn">Отправить</button>
+          </div>
         </form>
         <button class="close-btn" data-modal-close>
           <svg class="close-icon" width="18" height="18">
@@ -545,5 +561,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/form.js"></script>
   </body>
 </html>
