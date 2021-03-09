@@ -411,6 +411,7 @@ footer {
 .form-input:hover,
 .form-input:focus {
   border-color: var(--blue-first);
+  outline: none;
 }
 
 .form-input:hover + .form-icon,
@@ -419,8 +420,9 @@ footer {
 }
 
 .form-textarea:hover,
-.form-textarea:hover {
+.form-textarea:focus {
   border-color: var(--blue-first);
+  outline: none;
 }
 
 .form-textarea {
